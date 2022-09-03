@@ -12,10 +12,11 @@ int main() {
 
 		std::cout << "Please enter your first name: \n\n";
 		std::cin >> First;//first name
-		std::cout << "Ok now what is your last name\n\n"
+		std::cout << "Ok now what is your last name\n\n";
+		std::cin >> Last;// last name input
 		std::cout << "Please enter the name of your dream company to work for: (EX DELTA, NETJETS) (No space please :)) \n\n";
 		std::cin >> bairline;
-		std::cout << "Our story is that of a young commercial pilot starting his journey in aviation choosing a path, conflited with the choice of societal norms or the fast and easy track our main character " << name << " is about to pick there school of choice .\n";
+		std::cout << "Our story is that of a young commercial pilot starting his journey in aviation choosing a path, conflited with the choice of societal norms or the fast and easy track our main character " << First <<" "<< Last << " is about to pick there school of choice .\n";
 
 		std::cout << "The choice is simple you can either go the the pizza school ATP flight school and live in there housing for 9 months, or go to Embry riddle and be broke for the remainder of your life. \n\n";
 		std::cout << "So whats your choice (A):for atp, or (B) for Embry riddle\n";
