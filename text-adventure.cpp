@@ -8,7 +8,7 @@ int main() {// check the answers flows, ex choice 2b does not have the associate
 	char choice4;
 	char choice5;
 	std::string bairline;
-	int i = 0;
+	int i;
 	while (i < 20) {
 		std::cout << "Please enter your first name: \n\n";
 		std::cin >> First;//first name
@@ -26,19 +26,19 @@ int main() {// check the answers flows, ex choice 2b does not have the associate
 		i+5;
 		if ((choice1 == 'A') || choice1 == 'a') {
 			std::cout << "Well congratulations your now apart of the most advertised flight school in the world the next choice that you have to make is where to go here are your choices.\n\n";
-			i++;
+			i+5;
 			std::cout << "Your choices are (A) Trenton NJ,(B) Islip NY,(C) North las vegas,(D) gwinett county Georgia, (E) Nashville TN\n";
 			std::cin >> choice2;
 			switch (choice2) {
 			case 'a':
 			case 'A':
 				std::cout << "Trenton NJ home of nothing good, but lucky for you there has been a sudden influx in student's and your training instead of taking 9 months will now take 1 year\n\n";
-				i + 5;
+				i+5;
 				break;
 			case 'b':
 			case 'B':
 				std::cout << "Well welcome to long island, atleast the bagels are fresh.\n";
-				i + 5;
+				i+5;
 				break;
 			case 'c':
 			case 'C':
@@ -76,9 +76,11 @@ int main() {// check the answers flows, ex choice 2b does not have the associate
 			case 'B':
 				std::cout << "You leave ERAU at the top of your class and end up finding a job in Key West florida at Signature working as a line tec, shortly after getting the job you meet a individual that has a float plane operation.\n\n";
 				i + 5;
+				std::cout << "You and the gentleman talk and exchange plesntrys. after the short converstation he asks if youd be willing to help wash his plane.\n";
+				std::cout << "A) Yes  B)No";
+				std::cin >> choice3;
 				break;
 			default:
-				std::cout << "an error accoured\n";
 				break;
 			}
 			switch (choice5){
@@ -111,6 +113,7 @@ int main() {// check the answers flows, ex choice 2b does not have the associate
 				std::cout << "After telling the nice man that you were too busy and that you'd do it for sure tomorrow, a charter operation with a nice Blue paint scheme and the word UP shows up to the ramp." << "\n" << "You begin to service there aircraft and in talking with one of there pilots, you find out there hiring." << "\n" << "The gentleman goes on to state that if you put him down as the one who refrenced you, then you will 100% get the job.\n";
 				std::cout << "Do you (C) Take the job" << "\n" << "Or (D) Wash the nice mans plane tomorrow?\n";
 					i + 5;
+					std::cout << i;
 					std::cin >> choice4;
 			}
 			switch (choice4) {
@@ -146,9 +149,7 @@ int main() {// check the answers flows, ex choice 2b does not have the associate
 			default:
 				std::cout << "check your answer";
 			}
-
-			std::cout << i;
 		}
-
+		std::cout << "\n" << i << "\n";
 		}
 	}
